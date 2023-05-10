@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom right, #c4a5a5, #c74d20);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #333333;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.TodoWrapper {
+  background: linear-gradient(to bottom right,#ff5f25, #bd6846 );
+  margin-top: 3rem;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  width: 600px;
+}
+
+.TodoForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.todo-input {
+  outline: none;
+  background: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin-right: 1rem;
+  width: 100%;
+  color: #333333;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.todo-input::placeholder {
+  color: #a6a6a6;
+}
+
+.todo-btn {
+  background: linear-gradient(to bottom right, #fd8758, #ff6026);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  /* border: 55px; */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.todo-btn:hover {
+  background: linear-gradient(to bottom right, #ff6347, #ff4500);
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  color: #333333;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.Todo:hover {
+  background: linear-gradient(to bottom right, #ff7f50, #ffa07a);
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.fa-trash {
+  margin-left: 1rem;
+  color: #a6a6a6;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.fa-trash:hover {
+  color: #fff;
+}
+
+.completed {
+  color: #a6a6a6;
+  text-decoration: line-through;
+}
