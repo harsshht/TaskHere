@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 * {
@@ -9,7 +10,6 @@
 
 body {
   background: linear-gradient(to bottom right, #c4a5a5, #c74d20);
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +28,7 @@ h1 {
 }
 
 .TodoWrapper {
-  background: linear-gradient(to bottom right,#ff5f25, #bd6846 );
+  background: linear-gradient(to bottom right, #ff5f25, #bd6846);
   margin-top: 3rem;
   padding: 2rem;
   border-radius: 10px;
@@ -65,7 +65,6 @@ h1 {
   color: #fff;
   border: none;
   padding: 0.75rem 1.5rem;
-  /* border: 55px; */
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -106,9 +105,47 @@ h1 {
 
 .fa-trash:hover {
   color: #fff;
+
+
 }
 
 .completed {
   color: #a6a6a6;
   text-decoration: line-through;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .TodoWrapper {
+    padding: 1rem;
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .TodoWrapper {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .todo-input {
+    font-size: 1rem;
+  }
+
+  .todo-btn {
+    padding: 0.5rem 1rem;
+  }
+
+  .Todo {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .fa-trash {
+    font-size: 1rem;
+  }
 }
