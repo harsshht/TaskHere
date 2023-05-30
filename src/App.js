@@ -1,10 +1,15 @@
-import './App.css';
-import { TodoWrapper } from './components/TodoWrapper';
+import "./App.css";
+import { TodoWrapper } from "./components/TodoWrapper";
+import { DateAndTime } from "./components/dateAndTime";
 
 function App() {
   return (
     <div className="App">
-      <TodoWrapper  />
+      <div>
+        <DateAndTime />
+
+        <TodoWrapper />
+      </div>
     </div>
   );
 }
